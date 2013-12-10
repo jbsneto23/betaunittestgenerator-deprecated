@@ -1,0 +1,110 @@
+eclipse
+run
+compile
+exit
+run
+compile
+run
+run-main Main
+compile
+run-main Main
+compile
+run-main Main
+compile
+run-main Main
+compile
+run-main Main
+compile
+run-main
+run
+run-main Main
+run
+run-main Main
+compile
+run-main Main
+exit
+compile
+run-main Main
+exit
+compile
+run-main Main
+exit
+run-main Main
+exit
+compile
+run-main Main
+compile
+run-main Main
+exit
+run-main Main
+exit
+run-main Main
+exit
+compile
+run-main Main
+compile
+run-main Main
+compile
+run-main Main
+compile
+run-main Main
+exit
+compile
+exit
+package-src
+package
+exit
+package
+package-options
+help
+help package-options
+help package
+version
+exit
+exot
+exit
+retry
+exit
+assembly
+r
+assembly
+exit
+assembly-package-dependency
+exit
+compile
+exit
+compile
+run-main Main
+exit
+compile
+run-main Main
+compile
+run-main Main
+compile
+exit
+compile
+run-main Main
+exit
+run-main Main
+compile
+help
+help clean
+clean
+compile
+compile Main.java
+compile
+help compile
+help compilers
+help compile-inputs
+help compile-order
+compile-order
+compile-order JavaThenScala
+exit
+compile-order JavaThenScala
+compile-order 
+compile
+exit
+compile-order 
+compile
+run-main Main
+exit
