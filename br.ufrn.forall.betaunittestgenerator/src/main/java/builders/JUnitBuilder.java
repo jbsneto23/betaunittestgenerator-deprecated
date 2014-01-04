@@ -88,6 +88,7 @@ public class JUnitBuilder extends UnitTestBuilder {
 		return call;
 	}
 
+	@Override
 	public String testContent(TestSuite testSuite) {
 		String content = templates.txt.JUnitTemplate.render(this, testSuite)
 				.toString();
@@ -101,6 +102,7 @@ public class JUnitBuilder extends UnitTestBuilder {
 				+ testSuite.getOperationUnderTest().substring(1) + "Test";
 	}
 
+	@Override
 	public String testOutputName(TestSuite testSuite) {
 		return className(testSuite) + ".java";
 	}

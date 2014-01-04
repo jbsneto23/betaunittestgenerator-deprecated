@@ -5,6 +5,7 @@ import java.io.PrintStream;
 
 import models.OracleStrategy;
 import models.TestSuite;
+import nu.xom.Document;
 import parser.XMLParser;
 
 public abstract class UnitTestBuilder {
@@ -13,6 +14,39 @@ public abstract class UnitTestBuilder {
 	
 	public abstract String testOutputName(TestSuite testSuite);
 
+	public void generateUnitTest(Document doc, String outputPath) {
+		TestSuite testSuite = XMLParser.testSuiteFromXML(doc);
+		String content = testContent(testSuite);
+		String fileOutputName = testOutputName(testSuite);
+		try {
+			FileOutputStream f;
+			f = new FileOutputStream(outputPath + fileOutputName);
+			PrintStream ps = new PrintStream(f);
+			ps.println(content);
+			f.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(-1);
+		}
+	}
+	
+	public void generateUnitTest(Document doc, String outputPath, OracleStrategy oracleStrategy) {
+		TestSuite testSuite = XMLParser.testSuiteFromXML(doc);
+		testSuite.setOracleStrategy(oracleStrategy);
+		String content = testContent(testSuite);
+		String fileOutputName = testOutputName(testSuite);
+		try {
+			FileOutputStream f;
+			f = new FileOutputStream(outputPath + fileOutputName);
+			PrintStream ps = new PrintStream(f);
+			ps.println(content);
+			f.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(-1);
+		}
+	}
+	
 	public void generateUnitTest(String fileName, String outputPath) {
 		TestSuite testSuite = XMLParser.testSuiteFromXML(fileName);
 		String content = testContent(testSuite);

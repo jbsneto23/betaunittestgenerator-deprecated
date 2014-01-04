@@ -108,3 +108,41 @@ compile-order
 compile
 run-main Main
 exit
+compile
+exit
+compile
+run-main Main
+compile
+exit
+compile
+run-main Main
+exit
+compile
+run-main Main
+exit
+compile
+run-main Main
+assembly
+exit
+compile
+assembly
+compile
+exit
+compile
+run-main Main
+assembly
+exit
+assembly
+exit
+assembly
+exit
+assembly
+exit
+assembly
+exit
+assembly
+compile
+run-main Main
+exit
+run-main Main
+exit

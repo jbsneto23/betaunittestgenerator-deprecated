@@ -32,7 +32,7 @@ public class @{builder.className(testSuite)} {
 	* Formula: @testCase.getFormula()
 	*/
 	@@Test
-	public void testCase@(testCase.getId()) {
+	public void testCase@(testCase.getId())() {
 		@if(!testCase.getStateVariables().isEmpty()){// State } @* Beginning of for iteration *@ @for(variable <- testCase.getStateVariables()){
 		@(builder.variableDeclaration(testCase.getFormula(), variable.getIdentifier()) + " = " + builder.variableAttribution(testCase.getFormula(), variable.getIdentifier(), variable.getValues()));
 		@(builder.setCall(className.toLowerCase(), variable.getIdentifier()));

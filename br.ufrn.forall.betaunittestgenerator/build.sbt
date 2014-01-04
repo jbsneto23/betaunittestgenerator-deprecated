@@ -15,6 +15,7 @@ scalacOptions := Seq("-deprecation", "-encoding", "utf8")
 libraryDependencies ++= Seq( 
 	"junit" % "junit" % "4.11",
 	"xom" % "xom" % "1.2.5"
+	exclude ("xml-apis", "xml-apis")
 )
 
 seq(Twirl.settings: _*)

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: io.spray
+Implementation-Title: twirl-api
+Implementation-Version: 0.6.1
+Implementation-Vendor-Id: io.spray
+Specification-Vendor: io.spray
+Specification-Title: twirl-api
+Implementation-URL: https://github.com/spray/sbt-twirl
+Specification-Version: 0.6.1
+

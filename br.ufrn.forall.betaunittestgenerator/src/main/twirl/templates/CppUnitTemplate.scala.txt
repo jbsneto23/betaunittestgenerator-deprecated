@@ -1,0 +1,71 @@
+@(builder: builders.CppUnitBuilder, testSuite: models.TestSuite)
+#include <cppunit/extensions/HelperMacros.h>
+#include <cppunit/extensions/TestFactoryRegistry.h>
+#include <cppunit/TestRunner.h>
+@defining(testSuite.getMachineName()){ className =>
+/** 
+* Machine: @testSuite.getMachineName()
+* Operation: @testSuite.getOperationUnderTest()
+*
+* Partition Strategy: @testSuite.getPartitionStrategy()
+* Combination Strategy: @testSuite.getCombinatorialCriteria()
+* Oracle Strategy: @testSuite.getOracleStrategy().getStrategy()
+*/
+class @{builder.className(testSuite)} : public CppUnit::TestFixture
+{
+	CPPUNIT_TEST_SUITE( @{builder.className(testSuite)} );
+	@for(testCase <- testSuite.getTestCases()){
+	CPPUNIT_TEST( testCase@(testCase.getId()) );
+	}
+	CPPUNIT_TEST_SUITE_END();
+	
+	private:
+		@(className) *@(className.toLowerCase());
+	
+	public:
+		void setUp()
+		{
+			@(className.toLowerCase()) = new @(className);
+		}
+		
+		void tearDown()
+		{
+			delete @(className.toLowerCase());
+		}
+		@if(testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT_RETURN_VALUES || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT_VARIABLES || testSuite.getOracleStrategy() == models.OracleStrategy.ALL){
+		void checkInvariant()
+		{
+			// implement something to check the state invariants
+		}
+		}
+		@for(testCase <- testSuite.getTestCases()){
+		/**
+		* Test Case @testCase.getId()
+		* Formula: @testCase.getFormula()
+		*/
+		void testCase@(testCase.getId())()
+		{
+			@if(!testCase.getStateVariables().isEmpty()){// State } @* Beginning of for iteration *@ @for(variable <- testCase.getStateVariables()){
+			@(builder.variableDeclaration(testCase.getFormula(), variable.getIdentifier(), false) + " = " + builder.variableAttribution(testCase.getFormula(), variable.getIdentifier(), variable.getValues()));
+			@(builder.setCall(className.toLowerCase(), variable.getIdentifier()));
+			} @* End of for iteration *@
+			@if(!testCase.getOperationParameters().isEmpty()){// Input Values } @* Beginning of for iteration *@ @for(parameter <- testCase.getOperationParameters()){
+			@(builder.variableDeclaration(testCase.getFormula(), parameter.getIdentifier(), false) + " = " + builder.variableAttribution(testCase.getFormula(), parameter.getIdentifier(), parameter.getValues()) + ";")
+			} @* End of for iteration *@
+			@if(testCase.hasReturn() && (testSuite.getOracleStrategy() == models.OracleStrategy.RETURN_VALUES || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT_RETURN_VALUES || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_VARIABLES_RETURN_VALUES || testSuite.getOracleStrategy() == models.OracleStrategy.ALL)){
+			CPPUNIT_ASSERT( @(builder.operationCall(className.toLowerCase(), testSuite.getOperationUnderTest(), testCase.getOperationParameters())) == /* Add expected value here */ );
+			} else {
+			@(builder.operationCall(className.toLowerCase(), testSuite.getOperationUnderTest(), testCase.getOperationParameters()));
+			}
+			@if(testSuite.getOracleStrategy() == models.OracleStrategy.STATE_VARIABLES || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT_VARIABLES || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_VARIABLES_RETURN_VALUES || testSuite.getOracleStrategy() == models.OracleStrategy.ALL){
+			@for(variable <- testCase.getStateVariables()){
+			@(builder.variableDeclaration(testCase.getFormula(), variable.getIdentifier(), true));	// Add expected value here.
+			CPPUNIT_ASSERT( @(builder.getCall(className.toLowerCase(), variable.getIdentifier()) + " == " + variable.getIdentifier() + "Expected") );
+			} @* End of for iteration *@ } @* End if *@	
+			@if(testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT_RETURN_VALUES || testSuite.getOracleStrategy() == models.OracleStrategy.STATE_INVARIANT_VARIABLES || testSuite.getOracleStrategy() == models.OracleStrategy.ALL){
+			checkInvariant(); // calling check invariant
+			}
+		}
+		}
+} 
+}

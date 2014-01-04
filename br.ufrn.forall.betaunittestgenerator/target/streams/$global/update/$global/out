@@ -40,44 +40,32 @@
 [0m[[0mdebug[0m] [0m	found xom#xom;1.2.5 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving xml-apis#xml-apis;1.3.03 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xml-apis#xml-apis;1.3.03[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: xml-apis#xml-apis;1.3.03[0m
-[0m[[0mdebug[0m] [0m	found xml-apis#xml-apis;1.3.03 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0minfo[0m] [0mResolving xerces#xercesImpl;2.8.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xerces#xercesImpl;2.8.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xerces#xercesImpl;2.8.0[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: xerces#xercesImpl;2.8.0[0m
 [0m[[0mdebug[0m] [0m	found xerces#xercesImpl;2.8.0 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0minfo[0m] [0mResolving xalan#xalan;2.7.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xalan#xalan;2.7.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xalan#xalan;2.7.0[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: xalan#xalan;2.7.0[0m
 [0m[[0mdebug[0m] [0m	found xalan#xalan;2.7.0 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.spray#twirl-api_2.9.2;0.6.1 ...[0m
@@ -119,29 +107,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->runtime][0m
@@ -174,29 +155,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->runtime][0m
@@ -232,29 +206,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->runtime][0m
@@ -289,29 +256,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->runtime][0m
@@ -346,29 +306,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xerces#xercesImpl;2.8.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.8.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xom#xom;1.2.5->xalan#xalan;2.7.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;2.0.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.0->xml-apis#xml-apis;1.3.03 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: xml-apis#xml-apis;2.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->xom#xom;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT->io.spray#twirl-api_2.9.2;0.6.1 [compile->runtime][0m
@@ -398,11 +351,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xom#xom;1.2.5!xom.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#twirl-api_2.9.2;0.6.1!twirl-api_2.9.2.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] xml-apis#xml-apis;1.3.03!xml-apis.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xerces#xercesImpl;2.8.0!xercesImpl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xalan#xalan;2.7.0!xalan.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 757ms :: artifacts dl 37ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1182ms :: artifacts dl 38ms[0m
 [0m[[0mdebug[0m] [0m	report for br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT compile produced in /Users/joaosouza/Documents/Mestrado/Repositorios/betaunittestgenerator/br.ufrn.forall.betaunittestgenerator/target/resolution-cache/reports/br.ufrn.forall.betaunittestgenerator-beta-unit-test-generator_2.9.2-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT runtime produced in /Users/joaosouza/Documents/Mestrado/Repositorios/betaunittestgenerator/br.ufrn.forall.betaunittestgenerator/target/resolution-cache/reports/br.ufrn.forall.betaunittestgenerator-beta-unit-test-generator_2.9.2-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT test produced in /Users/joaosouza/Documents/Mestrado/Repositorios/betaunittestgenerator/br.ufrn.forall.betaunittestgenerator/target/resolution-cache/reports/br.ufrn.forall.betaunittestgenerator-beta-unit-test-generator_2.9.2-test.xml[0m
@@ -415,5 +367,5 @@
 [0m[[0mdebug[0m] [0m	report for br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT sources produced in /Users/joaosouza/Documents/Mestrado/Repositorios/betaunittestgenerator/br.ufrn.forall.betaunittestgenerator/target/resolution-cache/reports/br.ufrn.forall.betaunittestgenerator-beta-unit-test-generator_2.9.2-sources.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT docs produced in /Users/joaosouza/Documents/Mestrado/Repositorios/betaunittestgenerator/br.ufrn.forall.betaunittestgenerator/target/resolution-cache/reports/br.ufrn.forall.betaunittestgenerator-beta-unit-test-generator_2.9.2-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for br.ufrn.forall.betaunittestgenerator#beta-unit-test-generator_2.9.2;1.0-SNAPSHOT pom produced in /Users/joaosouza/Documents/Mestrado/Repositorios/betaunittestgenerator/br.ufrn.forall.betaunittestgenerator/target/resolution-cache/reports/br.ufrn.forall.betaunittestgenerator-beta-unit-test-generator_2.9.2-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (757ms resolve - 37ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (1182ms resolve - 38ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
